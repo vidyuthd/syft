@@ -3,6 +3,7 @@
 ## Use rbenv and install 2.6.3 version using
 ```rbenv install 2.6.3```
 ```rbenv local 2.6.3```
+```gem install test-unit```
 
 
 ## Usage
