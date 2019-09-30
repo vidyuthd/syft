@@ -1,6 +1,6 @@
 module Syft
   class MultipleItemsPromotionRule < PromotionRule
-    attr_accessor :product_code, :minimum_quantity, :new_value, :old_value, :quantity
+    attr_reader :product_code, :minimum_quantity, :new_value, :old_value, :quantity
     PRECEDENCE = 0
 
     ## individual promotion rule

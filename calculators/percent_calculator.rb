@@ -1,6 +1,6 @@
 module Syft
   class PercentCalculator
-    attr_accessor :percent
+    attr_reader :percent
 
     def initialize(percent:)
       @percent = percent

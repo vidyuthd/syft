@@ -1,6 +1,6 @@
 module Syft
   class PromotionsManager
-    attr_accessor :promotion_rules
+    attr_reader :promotion_rules
 
     ## a model which stores high level of promotion rules and knows what to do with them and acts as an interaction btn checkout process and promotions
     def initialize(promotion_rules:)

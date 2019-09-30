@@ -1,6 +1,6 @@
 module Syft
   class Product
-    attr_accessor :code, :name, :price, :currency
+    attr_reader :code, :name, :price, :currency
 
     ## model for storing product attributes
     def initialize(code:, name:, price:, currency:"£")
