@@ -1,6 +1,6 @@
 module Syft
   class CartTotalPromotionRule < PromotionRule
-    attr_accessor :minimum_amount, :discount_type, :value
+    attr_reader :minimum_amount, :discount_type, :value
     DISCOUNT_TYPE_PERCENT = "percent"
     PRECEDENCE = 1
 

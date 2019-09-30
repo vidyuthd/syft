@@ -1,6 +1,6 @@
 module Syft
   class Cart
-    attr_accessor :cart_items, :total, :adjusted_total
+    attr_reader :cart_items, :total, :adjusted_total
 
     def initialize(cart_items:[])
       @cart_items = cart_items
@@ -21,6 +21,9 @@ module Syft
       @adjusted_total += item.price
     end
 
+    def adjusted_total=(value)
+      @adjusted_total = value
+    end
 
     def item(product_code:)
       @cart_items.select {|cart_item| cart_item.product.code == product_code }

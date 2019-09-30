@@ -1,6 +1,6 @@
 module Syft
   class Checkout
-    attr_accessor :promotions_manager, :cart
+    attr_reader :promotions_manager, :cart
 
     def initialize(promotion_rules:[])
       @cart = Cart.new

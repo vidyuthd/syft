@@ -1,6 +1,6 @@
 module Syft
   class PromotionRule
-    attr_accessor :promotion_calculator, :precedence, :next_rule
+    attr_reader :promotion_calculator, :precedence, :next_rule
 
     def next_rule(rule:)
       @next_rule = rule
